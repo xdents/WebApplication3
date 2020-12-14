@@ -1,0 +1,311 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dbHR" targetNamespace="http://tempuri.org/dbHR.xsd" xmlns:mstns="http://tempuri.org/dbHR.xsd" xmlns="http://tempuri.org/dbHR.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Web.config" AppSettingsPropertyName="HRSQLConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="HRSQLConnectionString (Web.config)" ParameterPrefix="@" PropertyReference="AppConfig.System.Configuration.ConfigurationManager.0.ConnectionStrings.HRSQLConnectionString.ConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="HRSQL_V_CombinedDataTableAdapter" GeneratorDataComponentClassName="HRSQL_V_CombinedDataTableAdapter" Name="HRSQL_V_CombinedData" UserDataComponentName="HRSQL_V_CombinedDataTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="HRSQLConnectionString (Web.config)" DbObjectName="HRSQL_Test.dbo.HRSQL_V_CombinedData" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>select  [Currency], [EmployeeID], [EmployeeName], [Company], [Department], [Function], [Title], [JoinDate], [CostCenter], [DL/IDL] as DLIDL, [Category], [JobLevel], [JobGrade], [Plant], [Period], [Salary1], [CN-Salary2] as CNSalary2, [CN-Salary3] as CNSalary3, [US-Salary1] as USSalary1, [US-Salary2ADPfee] as USSalary2ADPfee, [CN-Allowance1] as CNAllowance1, [CN-Allowance2] as CNAllowance2, [CN-Allowance3] as CNAllowance3, [CN-Allowance4] as CNAllowance4, [CN-Allowance5] as CNAllowance5, [CN-Allowance6] as CNAllowance6, [CN-Allowance7] as CNAllowance7, [CN-Allowance8] as CNAllowance8, [CN-Allowance9] as CNAllowance9, [CN-Allowance10] as CNAllowance10, [CN-Allowance11] as CNAllowance11, [CN-Allowance12] as CNAllowance12, [US-Allowance1] as USAllowance1, [US-Allowance2] as USAllowance2, [MY-Allowance1] as MYAllowance1, [MY-Allowance2] as MYAllowance2, [MY-Allowance3] as MYAllowance3, [MY-Allowance4] as MYAllowance4, [MY-Allowance5] as MYAllowance5, [MY-Allowance6] as MYAllowance6, [CN-OT1] as CNOT1, [CN-OT2] as CNOT2, [CN-OT3] as CNOT3, [MY-OT1] as MYOT1, [MY-OT2] as MYOT2, [MY-OT3] as MYOT3, [MY-OT4] as MYOT4, [MY-OT5] as MYOT5, [MY-OT6] as MYOT6, [MY-OT7] as MYOT7, [MY-OT8] as MYOT8, [MY-OT9] as MYOT9, [MY-OT10] as MYOT10, [Incentive], [CNY-Retention1] as CNYRetention1, [CNY-Retention2] as CNYRetention2, [QuarterlyBonus], [AnnualBonus], [OtherBonuses], [PaidAL], [CN-Others2] as CNOthers2, [CN-Others3] as CNOthers3, [CN-Others4] as CNOthers4, [BackPay], [SG-Others] as SGOthers, [US-Others] as USOthers, [MY-Others] as MYOthers, [Deduction-Domitory] as DeductionDomitory, [Deduction-NPL] as DeductionNPL, [Deduction-SL] as DeductionSL, [Deduction-Late] as DeductionLate, [Deduction5], [Deduction6], [Deduction7], [Deduction8], [US-Deduction] as USDeduction, [US-Insurance] as USInsurance, [Gross], [SocialSecuritybyEmployer], [HFbyCompany], [SocialSecuritybyEmployee], [HFbyEmployee], [ProvidentFundbyEmployee], [ProvidentFundbyCompany], [401kbyCompany] as T401kbyCompany, [MY-EISEE] as MYEISEE, [MY-EISER] as MYEISER, [MY-Tax] as MYTax, [CN-Tax1] as CNTax1, [CN-Tax2] as CNTax2, [Severance], [Net] from HRSQL_V_CombinedData
+</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Currency" DataSetColumn="Currency" />
+              <Mapping SourceColumn="EmployeeID" DataSetColumn="EmployeeID" />
+              <Mapping SourceColumn="EmployeeName" DataSetColumn="EmployeeName" />
+              <Mapping SourceColumn="Company" DataSetColumn="Company" />
+              <Mapping SourceColumn="Department" DataSetColumn="Department" />
+              <Mapping SourceColumn="Function" DataSetColumn="Function" />
+              <Mapping SourceColumn="Title" DataSetColumn="Title" />
+              <Mapping SourceColumn="JoinDate" DataSetColumn="JoinDate" />
+              <Mapping SourceColumn="CostCenter" DataSetColumn="CostCenter" />
+              <Mapping SourceColumn="DLIDL" DataSetColumn="DLIDL" />
+              <Mapping SourceColumn="Category" DataSetColumn="Category" />
+              <Mapping SourceColumn="JobLevel" DataSetColumn="JobLevel" />
+              <Mapping SourceColumn="JobGrade" DataSetColumn="JobGrade" />
+              <Mapping SourceColumn="Plant" DataSetColumn="Plant" />
+              <Mapping SourceColumn="Period" DataSetColumn="Period" />
+              <Mapping SourceColumn="Salary1" DataSetColumn="Salary1" />
+              <Mapping SourceColumn="CNSalary2" DataSetColumn="CNSalary2" />
+              <Mapping SourceColumn="CNSalary3" DataSetColumn="CNSalary3" />
+              <Mapping SourceColumn="USSalary1" DataSetColumn="USSalary1" />
+              <Mapping SourceColumn="USSalary2ADPfee" DataSetColumn="USSalary2ADPfee" />
+              <Mapping SourceColumn="CNAllowance1" DataSetColumn="CNAllowance1" />
+              <Mapping SourceColumn="CNAllowance2" DataSetColumn="CNAllowance2" />
+              <Mapping SourceColumn="CNAllowance3" DataSetColumn="CNAllowance3" />
+              <Mapping SourceColumn="CNAllowance4" DataSetColumn="CNAllowance4" />
+              <Mapping SourceColumn="CNAllowance5" DataSetColumn="CNAllowance5" />
+              <Mapping SourceColumn="CNAllowance6" DataSetColumn="CNAllowance6" />
+              <Mapping SourceColumn="CNAllowance7" DataSetColumn="CNAllowance7" />
+              <Mapping SourceColumn="CNAllowance8" DataSetColumn="CNAllowance8" />
+              <Mapping SourceColumn="CNAllowance9" DataSetColumn="CNAllowance9" />
+              <Mapping SourceColumn="CNAllowance10" DataSetColumn="CNAllowance10" />
+              <Mapping SourceColumn="CNAllowance11" DataSetColumn="CNAllowance11" />
+              <Mapping SourceColumn="CNAllowance12" DataSetColumn="CNAllowance12" />
+              <Mapping SourceColumn="USAllowance1" DataSetColumn="USAllowance1" />
+              <Mapping SourceColumn="USAllowance2" DataSetColumn="USAllowance2" />
+              <Mapping SourceColumn="MYAllowance1" DataSetColumn="MYAllowance1" />
+              <Mapping SourceColumn="MYAllowance2" DataSetColumn="MYAllowance2" />
+              <Mapping SourceColumn="MYAllowance3" DataSetColumn="MYAllowance3" />
+              <Mapping SourceColumn="MYAllowance4" DataSetColumn="MYAllowance4" />
+              <Mapping SourceColumn="MYAllowance5" DataSetColumn="MYAllowance5" />
+              <Mapping SourceColumn="MYAllowance6" DataSetColumn="MYAllowance6" />
+              <Mapping SourceColumn="CNOT1" DataSetColumn="CNOT1" />
+              <Mapping SourceColumn="CNOT2" DataSetColumn="CNOT2" />
+              <Mapping SourceColumn="CNOT3" DataSetColumn="CNOT3" />
+              <Mapping SourceColumn="MYOT1" DataSetColumn="MYOT1" />
+              <Mapping SourceColumn="MYOT2" DataSetColumn="MYOT2" />
+              <Mapping SourceColumn="MYOT3" DataSetColumn="MYOT3" />
+              <Mapping SourceColumn="MYOT4" DataSetColumn="MYOT4" />
+              <Mapping SourceColumn="MYOT5" DataSetColumn="MYOT5" />
+              <Mapping SourceColumn="MYOT6" DataSetColumn="MYOT6" />
+              <Mapping SourceColumn="MYOT7" DataSetColumn="MYOT7" />
+              <Mapping SourceColumn="MYOT8" DataSetColumn="MYOT8" />
+              <Mapping SourceColumn="MYOT9" DataSetColumn="MYOT9" />
+              <Mapping SourceColumn="MYOT10" DataSetColumn="MYOT10" />
+              <Mapping SourceColumn="Incentive" DataSetColumn="Incentive" />
+              <Mapping SourceColumn="CNYRetention1" DataSetColumn="CNYRetention1" />
+              <Mapping SourceColumn="CNYRetention2" DataSetColumn="CNYRetention2" />
+              <Mapping SourceColumn="QuarterlyBonus" DataSetColumn="QuarterlyBonus" />
+              <Mapping SourceColumn="AnnualBonus" DataSetColumn="AnnualBonus" />
+              <Mapping SourceColumn="OtherBonuses" DataSetColumn="OtherBonuses" />
+              <Mapping SourceColumn="PaidAL" DataSetColumn="PaidAL" />
+              <Mapping SourceColumn="CNOthers2" DataSetColumn="CNOthers2" />
+              <Mapping SourceColumn="CNOthers3" DataSetColumn="CNOthers3" />
+              <Mapping SourceColumn="CNOthers4" DataSetColumn="CNOthers4" />
+              <Mapping SourceColumn="BackPay" DataSetColumn="BackPay" />
+              <Mapping SourceColumn="SGOthers" DataSetColumn="SGOthers" />
+              <Mapping SourceColumn="USOthers" DataSetColumn="USOthers" />
+              <Mapping SourceColumn="MYOthers" DataSetColumn="MYOthers" />
+              <Mapping SourceColumn="DeductionDomitory" DataSetColumn="DeductionDomitory" />
+              <Mapping SourceColumn="DeductionNPL" DataSetColumn="DeductionNPL" />
+              <Mapping SourceColumn="DeductionSL" DataSetColumn="DeductionSL" />
+              <Mapping SourceColumn="DeductionLate" DataSetColumn="DeductionLate" />
+              <Mapping SourceColumn="Deduction5" DataSetColumn="Deduction5" />
+              <Mapping SourceColumn="Deduction6" DataSetColumn="Deduction6" />
+              <Mapping SourceColumn="Deduction7" DataSetColumn="Deduction7" />
+              <Mapping SourceColumn="Deduction8" DataSetColumn="Deduction8" />
+              <Mapping SourceColumn="USDeduction" DataSetColumn="USDeduction" />
+              <Mapping SourceColumn="USInsurance" DataSetColumn="USInsurance" />
+              <Mapping SourceColumn="Gross" DataSetColumn="Gross" />
+              <Mapping SourceColumn="SocialSecuritybyEmployer" DataSetColumn="SocialSecuritybyEmployer" />
+              <Mapping SourceColumn="HFbyCompany" DataSetColumn="HFbyCompany" />
+              <Mapping SourceColumn="SocialSecuritybyEmployee" DataSetColumn="SocialSecuritybyEmployee" />
+              <Mapping SourceColumn="HFbyEmployee" DataSetColumn="HFbyEmployee" />
+              <Mapping SourceColumn="ProvidentFundbyEmployee" DataSetColumn="ProvidentFundbyEmployee" />
+              <Mapping SourceColumn="ProvidentFundbyCompany" DataSetColumn="ProvidentFundbyCompany" />
+              <Mapping SourceColumn="MYEISEE" DataSetColumn="MYEISEE" />
+              <Mapping SourceColumn="MYEISER" DataSetColumn="MYEISER" />
+              <Mapping SourceColumn="MYTax" DataSetColumn="MYTax" />
+              <Mapping SourceColumn="CNTax1" DataSetColumn="CNTax1" />
+              <Mapping SourceColumn="CNTax2" DataSetColumn="CNTax2" />
+              <Mapping SourceColumn="Severance" DataSetColumn="Severance" />
+              <Mapping SourceColumn="Net" DataSetColumn="Net" />
+              <Mapping SourceColumn="T401kbyCompany" DataSetColumn="T401kbyCompany" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dbHR" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="dbHR" msprop:Generator_UserDSName="dbHR">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="HRSQL_V_CombinedData" msprop:Generator_TableClassName="HRSQL_V_CombinedDataDataTable" msprop:Generator_TableVarName="tableHRSQL_V_CombinedData" msprop:Generator_TablePropName="HRSQL_V_CombinedData" msprop:Generator_RowDeletingName="HRSQL_V_CombinedDataRowDeleting" msprop:Generator_RowChangingName="HRSQL_V_CombinedDataRowChanging" msprop:Generator_RowEvHandlerName="HRSQL_V_CombinedDataRowChangeEventHandler" msprop:Generator_RowDeletedName="HRSQL_V_CombinedDataRowDeleted" msprop:Generator_UserTableName="HRSQL_V_CombinedData" msprop:Generator_RowChangedName="HRSQL_V_CombinedDataRowChanged" msprop:Generator_RowEvArgName="HRSQL_V_CombinedDataRowChangeEvent" msprop:Generator_RowClassName="HRSQL_V_CombinedDataRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Currency" msprop:Generator_ColumnVarNameInTable="columnCurrency" msprop:Generator_ColumnPropNameInRow="Currency" msprop:Generator_ColumnPropNameInTable="CurrencyColumn" msprop:Generator_UserColumnName="Currency" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="EmployeeID" msprop:Generator_ColumnVarNameInTable="columnEmployeeID" msprop:Generator_ColumnPropNameInRow="EmployeeID" msprop:Generator_ColumnPropNameInTable="EmployeeIDColumn" msprop:Generator_UserColumnName="EmployeeID" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="EmployeeName" msprop:Generator_ColumnVarNameInTable="columnEmployeeName" msprop:Generator_ColumnPropNameInRow="EmployeeName" msprop:Generator_ColumnPropNameInTable="EmployeeNameColumn" msprop:Generator_UserColumnName="EmployeeName" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Company" msprop:Generator_ColumnVarNameInTable="columnCompany" msprop:Generator_ColumnPropNameInRow="Company" msprop:Generator_ColumnPropNameInTable="CompanyColumn" msprop:Generator_UserColumnName="Company" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Department" msprop:Generator_ColumnVarNameInTable="columnDepartment" msprop:Generator_ColumnPropNameInRow="Department" msprop:Generator_ColumnPropNameInTable="DepartmentColumn" msprop:Generator_UserColumnName="Department" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="200" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Function" msprop:Generator_ColumnVarNameInTable="columnFunction" msprop:Generator_ColumnPropNameInRow="Function" msprop:Generator_ColumnPropNameInTable="FunctionColumn" msprop:Generator_UserColumnName="Function">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Title" msprop:Generator_ColumnVarNameInTable="columnTitle" msprop:Generator_ColumnPropNameInRow="Title" msprop:Generator_ColumnPropNameInTable="TitleColumn" msprop:Generator_UserColumnName="Title" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="200" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="JoinDate" msprop:Generator_ColumnVarNameInTable="columnJoinDate" msprop:Generator_ColumnPropNameInRow="JoinDate" msprop:Generator_ColumnPropNameInTable="JoinDateColumn" msprop:Generator_UserColumnName="JoinDate" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="CostCenter" msprop:Generator_ColumnVarNameInTable="columnCostCenter" msprop:Generator_ColumnPropNameInRow="CostCenter" msprop:Generator_ColumnPropNameInTable="CostCenterColumn" msprop:Generator_UserColumnName="CostCenter" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DLIDL" msprop:Generator_ColumnVarNameInTable="columnDLIDL" msprop:Generator_ColumnPropNameInRow="DLIDL" msprop:Generator_ColumnPropNameInTable="DLIDLColumn" msprop:Generator_UserColumnName="DLIDL" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Category" msprop:Generator_ColumnVarNameInTable="columnCategory" msprop:Generator_ColumnPropNameInRow="Category" msprop:Generator_ColumnPropNameInTable="CategoryColumn" msprop:Generator_UserColumnName="Category" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="JobLevel" msprop:Generator_ColumnVarNameInTable="columnJobLevel" msprop:Generator_ColumnPropNameInRow="JobLevel" msprop:Generator_ColumnPropNameInTable="JobLevelColumn" msprop:Generator_UserColumnName="JobLevel" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="JobGrade" msprop:Generator_ColumnVarNameInTable="columnJobGrade" msprop:Generator_ColumnPropNameInRow="JobGrade" msprop:Generator_ColumnPropNameInTable="JobGradeColumn" msprop:Generator_UserColumnName="JobGrade" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Plant" msprop:Generator_ColumnVarNameInTable="columnPlant" msprop:Generator_ColumnPropNameInRow="Plant" msprop:Generator_ColumnPropNameInTable="PlantColumn" msprop:Generator_UserColumnName="Plant" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Period" msprop:Generator_ColumnVarNameInTable="columnPeriod" msprop:Generator_ColumnPropNameInRow="Period" msprop:Generator_ColumnPropNameInTable="PeriodColumn" msprop:Generator_UserColumnName="Period" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Salary1" msprop:Generator_ColumnVarNameInTable="columnSalary1" msprop:Generator_ColumnPropNameInRow="Salary1" msprop:Generator_ColumnPropNameInTable="Salary1Column" msprop:Generator_UserColumnName="Salary1" type="xs:decimal" minOccurs="0" />
+              <xs:element name="CNSalary2" msprop:Generator_ColumnVarNameInTable="columnCNSalary2" msprop:Generator_ColumnPropNameInRow="CNSalary2" msprop:Generator_ColumnPropNameInTable="CNSalary2Column" msprop:Generator_UserColumnName="CNSalary2" type="xs:decimal" minOccurs="0" />
+              <xs:element name="CNSalary3" msprop:Generator_ColumnVarNameInTable="columnCNSalary3" msprop:Generator_ColumnPropNameInRow="CNSalary3" msprop:Generator_ColumnPropNameInTable="CNSalary3Column" msprop:Generator_UserColumnName="CNSalary3" type="xs:decimal" minOccurs="0" />
+              <xs:element name="USSalary1" msprop:Generator_ColumnVarNameInTable="columnUSSalary1" msprop:Generator_ColumnPropNameInRow="USSalary1" msprop:Generator_ColumnPropNameInTable="USSalary1Column" msprop:Generator_UserColumnName="USSalary1" type="xs:decimal" minOccurs="0" />
+              <xs:element name="USSalary2ADPfee" msprop:Generator_ColumnVarNameInTable="columnUSSalary2ADPfee" msprop:Generator_ColumnPropNameInRow="USSalary2ADPfee" msprop:Generator_ColumnPropNameInTable="USSalary2ADPfeeColumn" msprop:Generator_UserColumnName="USSalary2ADPfee" type="xs:int" />
+              <xs:element name="CNAllowance1" msprop:Generator_ColumnVarNameInTable="columnCNAllowance1" msprop:Generator_ColumnPropNameInRow="CNAllowance1" msprop:Generator_ColumnPropNameInTable="CNAllowance1Column" msprop:Generator_UserColumnName="CNAllowance1" type="xs:decimal" minOccurs="0" />
+              <xs:element name="CNAllowance2" msprop:Generator_ColumnVarNameInTable="columnCNAllowance2" msprop:Generator_ColumnPropNameInRow="CNAllowance2" msprop:Generator_ColumnPropNameInTable="CNAllowance2Column" msprop:Generator_UserColumnName="CNAllowance2" type="xs:decimal" minOccurs="0" />
+              <xs:element name="CNAllowance3" msprop:Generator_ColumnVarNameInTable="columnCNAllowance3" msprop:Generator_ColumnPropNameInRow="CNAllowance3" msprop:Generator_ColumnPropNameInTable="CNAllowance3Column" msprop:Generator_UserColumnName="CNAllowance3" type="xs:decimal" minOccurs="0" />
+              <xs:element name="CNAllowance4" msprop:Generator_ColumnVarNameInTable="columnCNAllowance4" msprop:Generator_ColumnPropNameInRow="CNAllowance4" msprop:Generator_ColumnPropNameInTable="CNAllowance4Column" msprop:Generator_UserColumnName="CNAllowance4" type="xs:decimal" minOccurs="0" />
+              <xs:element name="CNAllowance5" msprop:Generator_ColumnVarNameInTable="columnCNAllowance5" msprop:Generator_ColumnPropNameInRow="CNAllowance5" msprop:Generator_ColumnPropNameInTable="CNAllowance5Column" msprop:Generator_UserColumnName="CNAllowance5" type="xs:decimal" minOccurs="0" />
+              <xs:element name="CNAllowance6" msprop:Generator_ColumnVarNameInTable="columnCNAllowance6" msprop:Generator_ColumnPropNameInRow="CNAllowance6" msprop:Generator_ColumnPropNameInTable="CNAllowance6Column" msprop:Generator_UserColumnName="CNAllowance6" type="xs:decimal" minOccurs="0" />
+              <xs:element name="CNAllowance7" msprop:Generator_ColumnVarNameInTable="columnCNAllowance7" msprop:Generator_ColumnPropNameInRow="CNAllowance7" msprop:Generator_ColumnPropNameInTable="CNAllowance7Column" msprop:Generator_UserColumnName="CNAllowance7" type="xs:decimal" minOccurs="0" />
+              <xs:element name="CNAllowance8" msprop:Generator_ColumnVarNameInTable="columnCNAllowance8" msprop:Generator_ColumnPropNameInRow="CNAllowance8" msprop:Generator_ColumnPropNameInTable="CNAllowance8Column" msprop:Generator_UserColumnName="CNAllowance8" type="xs:decimal" minOccurs="0" />
+              <xs:element name="CNAllowance9" msprop:Generator_ColumnVarNameInTable="columnCNAllowance9" msprop:Generator_ColumnPropNameInRow="CNAllowance9" msprop:Generator_ColumnPropNameInTable="CNAllowance9Column" msprop:Generator_UserColumnName="CNAllowance9" type="xs:decimal" minOccurs="0" />
+              <xs:element name="CNAllowance10" msprop:Generator_ColumnVarNameInTable="columnCNAllowance10" msprop:Generator_ColumnPropNameInRow="CNAllowance10" msprop:Generator_ColumnPropNameInTable="CNAllowance10Column" msprop:Generator_UserColumnName="CNAllowance10" type="xs:decimal" minOccurs="0" />
+              <xs:element name="CNAllowance11" msprop:Generator_ColumnVarNameInTable="columnCNAllowance11" msprop:Generator_ColumnPropNameInRow="CNAllowance11" msprop:Generator_ColumnPropNameInTable="CNAllowance11Column" msprop:Generator_UserColumnName="CNAllowance11" type="xs:decimal" minOccurs="0" />
+              <xs:element name="CNAllowance12" msprop:Generator_ColumnVarNameInTable="columnCNAllowance12" msprop:Generator_ColumnPropNameInRow="CNAllowance12" msprop:Generator_ColumnPropNameInTable="CNAllowance12Column" msprop:Generator_UserColumnName="CNAllowance12" type="xs:decimal" minOccurs="0" />
+              <xs:element name="USAllowance1" msprop:Generator_ColumnVarNameInTable="columnUSAllowance1" msprop:Generator_ColumnPropNameInRow="USAllowance1" msprop:Generator_ColumnPropNameInTable="USAllowance1Column" msprop:Generator_UserColumnName="USAllowance1" type="xs:decimal" minOccurs="0" />
+              <xs:element name="USAllowance2" msprop:Generator_ColumnVarNameInTable="columnUSAllowance2" msprop:Generator_ColumnPropNameInRow="USAllowance2" msprop:Generator_ColumnPropNameInTable="USAllowance2Column" msprop:Generator_UserColumnName="USAllowance2" type="xs:decimal" minOccurs="0" />
+              <xs:element name="MYAllowance1" msprop:Generator_ColumnVarNameInTable="columnMYAllowance1" msprop:Generator_ColumnPropNameInRow="MYAllowance1" msprop:Generator_ColumnPropNameInTable="MYAllowance1Column" msprop:Generator_UserColumnName="MYAllowance1" type="xs:decimal" minOccurs="0" />
+              <xs:element name="MYAllowance2" msprop:Generator_ColumnVarNameInTable="columnMYAllowance2" msprop:Generator_ColumnPropNameInRow="MYAllowance2" msprop:Generator_ColumnPropNameInTable="MYAllowance2Column" msprop:Generator_UserColumnName="MYAllowance2" type="xs:decimal" minOccurs="0" />
+              <xs:element name="MYAllowance3" msprop:Generator_ColumnVarNameInTable="columnMYAllowance3" msprop:Generator_ColumnPropNameInRow="MYAllowance3" msprop:Generator_ColumnPropNameInTable="MYAllowance3Column" msprop:Generator_UserColumnName="MYAllowance3" type="xs:decimal" minOccurs="0" />
+              <xs:element name="MYAllowance4" msprop:Generator_ColumnVarNameInTable="columnMYAllowance4" msprop:Generator_ColumnPropNameInRow="MYAllowance4" msprop:Generator_ColumnPropNameInTable="MYAllowance4Column" msprop:Generator_UserColumnName="MYAllowance4" type="xs:decimal" minOccurs="0" />
+              <xs:element name="MYAllowance5" msprop:Generator_ColumnVarNameInTable="columnMYAllowance5" msprop:Generator_ColumnPropNameInRow="MYAllowance5" msprop:Generator_ColumnPropNameInTable="MYAllowance5Column" msprop:Generator_UserColumnName="MYAllowance5" type="xs:decimal" minOccurs="0" />
+              <xs:element name="MYAllowance6" msprop:Generator_ColumnVarNameInTable="columnMYAllowance6" msprop:Generator_ColumnPropNameInRow="MYAllowance6" msprop:Generator_ColumnPropNameInTable="MYAllowance6Column" msprop:Generator_UserColumnName="MYAllowance6" type="xs:decimal" minOccurs="0" />
+              <xs:element name="CNOT1" msprop:Generator_ColumnVarNameInTable="columnCNOT1" msprop:Generator_ColumnPropNameInRow="CNOT1" msprop:Generator_ColumnPropNameInTable="CNOT1Column" msprop:Generator_UserColumnName="CNOT1" type="xs:decimal" minOccurs="0" />
+              <xs:element name="CNOT2" msprop:Generator_ColumnVarNameInTable="columnCNOT2" msprop:Generator_ColumnPropNameInRow="CNOT2" msprop:Generator_ColumnPropNameInTable="CNOT2Column" msprop:Generator_UserColumnName="CNOT2" type="xs:decimal" minOccurs="0" />
+              <xs:element name="CNOT3" msprop:Generator_ColumnVarNameInTable="columnCNOT3" msprop:Generator_ColumnPropNameInRow="CNOT3" msprop:Generator_ColumnPropNameInTable="CNOT3Column" msprop:Generator_UserColumnName="CNOT3" type="xs:decimal" minOccurs="0" />
+              <xs:element name="MYOT1" msprop:Generator_ColumnVarNameInTable="columnMYOT1" msprop:Generator_ColumnPropNameInRow="MYOT1" msprop:Generator_ColumnPropNameInTable="MYOT1Column" msprop:Generator_UserColumnName="MYOT1" type="xs:decimal" minOccurs="0" />
+              <xs:element name="MYOT2" msprop:Generator_ColumnVarNameInTable="columnMYOT2" msprop:Generator_ColumnPropNameInRow="MYOT2" msprop:Generator_ColumnPropNameInTable="MYOT2Column" msprop:Generator_UserColumnName="MYOT2" type="xs:decimal" minOccurs="0" />
+              <xs:element name="MYOT3" msprop:Generator_ColumnVarNameInTable="columnMYOT3" msprop:Generator_ColumnPropNameInRow="MYOT3" msprop:Generator_ColumnPropNameInTable="MYOT3Column" msprop:Generator_UserColumnName="MYOT3" type="xs:decimal" minOccurs="0" />
+              <xs:element name="MYOT4" msprop:Generator_ColumnVarNameInTable="columnMYOT4" msprop:Generator_ColumnPropNameInRow="MYOT4" msprop:Generator_ColumnPropNameInTable="MYOT4Column" msprop:Generator_UserColumnName="MYOT4" type="xs:decimal" minOccurs="0" />
+              <xs:element name="MYOT5" msprop:Generator_ColumnVarNameInTable="columnMYOT5" msprop:Generator_ColumnPropNameInRow="MYOT5" msprop:Generator_ColumnPropNameInTable="MYOT5Column" msprop:Generator_UserColumnName="MYOT5" type="xs:decimal" minOccurs="0" />
+              <xs:element name="MYOT6" msprop:Generator_ColumnVarNameInTable="columnMYOT6" msprop:Generator_ColumnPropNameInRow="MYOT6" msprop:Generator_ColumnPropNameInTable="MYOT6Column" msprop:Generator_UserColumnName="MYOT6" type="xs:decimal" minOccurs="0" />
+              <xs:element name="MYOT7" msprop:Generator_ColumnVarNameInTable="columnMYOT7" msprop:Generator_ColumnPropNameInRow="MYOT7" msprop:Generator_ColumnPropNameInTable="MYOT7Column" msprop:Generator_UserColumnName="MYOT7" type="xs:decimal" minOccurs="0" />
+              <xs:element name="MYOT8" msprop:Generator_ColumnVarNameInTable="columnMYOT8" msprop:Generator_ColumnPropNameInRow="MYOT8" msprop:Generator_ColumnPropNameInTable="MYOT8Column" msprop:Generator_UserColumnName="MYOT8" type="xs:decimal" minOccurs="0" />
+              <xs:element name="MYOT9" msprop:Generator_ColumnVarNameInTable="columnMYOT9" msprop:Generator_ColumnPropNameInRow="MYOT9" msprop:Generator_ColumnPropNameInTable="MYOT9Column" msprop:Generator_UserColumnName="MYOT9" type="xs:decimal" minOccurs="0" />
+              <xs:element name="MYOT10" msprop:Generator_ColumnVarNameInTable="columnMYOT10" msprop:Generator_ColumnPropNameInRow="MYOT10" msprop:Generator_ColumnPropNameInTable="MYOT10Column" msprop:Generator_UserColumnName="MYOT10" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Incentive" msprop:Generator_ColumnVarNameInTable="columnIncentive" msprop:Generator_ColumnPropNameInRow="Incentive" msprop:Generator_ColumnPropNameInTable="IncentiveColumn" msprop:Generator_UserColumnName="Incentive" type="xs:decimal" minOccurs="0" />
+              <xs:element name="CNYRetention1" msprop:Generator_ColumnVarNameInTable="columnCNYRetention1" msprop:Generator_ColumnPropNameInRow="CNYRetention1" msprop:Generator_ColumnPropNameInTable="CNYRetention1Column" msprop:Generator_UserColumnName="CNYRetention1" type="xs:decimal" minOccurs="0" />
+              <xs:element name="CNYRetention2" msprop:Generator_ColumnVarNameInTable="columnCNYRetention2" msprop:Generator_ColumnPropNameInRow="CNYRetention2" msprop:Generator_ColumnPropNameInTable="CNYRetention2Column" msprop:Generator_UserColumnName="CNYRetention2" type="xs:decimal" minOccurs="0" />
+              <xs:element name="QuarterlyBonus" msprop:Generator_ColumnVarNameInTable="columnQuarterlyBonus" msprop:Generator_ColumnPropNameInRow="QuarterlyBonus" msprop:Generator_ColumnPropNameInTable="QuarterlyBonusColumn" msprop:Generator_UserColumnName="QuarterlyBonus" type="xs:decimal" minOccurs="0" />
+              <xs:element name="AnnualBonus" msprop:Generator_ColumnVarNameInTable="columnAnnualBonus" msprop:Generator_ColumnPropNameInRow="AnnualBonus" msprop:Generator_ColumnPropNameInTable="AnnualBonusColumn" msprop:Generator_UserColumnName="AnnualBonus" type="xs:decimal" minOccurs="0" />
+              <xs:element name="OtherBonuses" msprop:Generator_ColumnVarNameInTable="columnOtherBonuses" msprop:Generator_ColumnPropNameInRow="OtherBonuses" msprop:Generator_ColumnPropNameInTable="OtherBonusesColumn" msprop:Generator_UserColumnName="OtherBonuses" type="xs:decimal" minOccurs="0" />
+              <xs:element name="PaidAL" msprop:Generator_ColumnVarNameInTable="columnPaidAL" msprop:Generator_ColumnPropNameInRow="PaidAL" msprop:Generator_ColumnPropNameInTable="PaidALColumn" msprop:Generator_UserColumnName="PaidAL" type="xs:decimal" minOccurs="0" />
+              <xs:element name="CNOthers2" msprop:Generator_ColumnVarNameInTable="columnCNOthers2" msprop:Generator_ColumnPropNameInRow="CNOthers2" msprop:Generator_ColumnPropNameInTable="CNOthers2Column" msprop:Generator_UserColumnName="CNOthers2" type="xs:decimal" minOccurs="0" />
+              <xs:element name="CNOthers3" msprop:Generator_ColumnVarNameInTable="columnCNOthers3" msprop:Generator_ColumnPropNameInRow="CNOthers3" msprop:Generator_ColumnPropNameInTable="CNOthers3Column" msprop:Generator_UserColumnName="CNOthers3" type="xs:decimal" minOccurs="0" />
+              <xs:element name="CNOthers4" msprop:Generator_ColumnVarNameInTable="columnCNOthers4" msprop:Generator_ColumnPropNameInRow="CNOthers4" msprop:Generator_ColumnPropNameInTable="CNOthers4Column" msprop:Generator_UserColumnName="CNOthers4" type="xs:decimal" minOccurs="0" />
+              <xs:element name="BackPay" msprop:Generator_ColumnVarNameInTable="columnBackPay" msprop:Generator_ColumnPropNameInRow="BackPay" msprop:Generator_ColumnPropNameInTable="BackPayColumn" msprop:Generator_UserColumnName="BackPay" type="xs:decimal" minOccurs="0" />
+              <xs:element name="SGOthers" msprop:Generator_ColumnVarNameInTable="columnSGOthers" msprop:Generator_ColumnPropNameInRow="SGOthers" msprop:Generator_ColumnPropNameInTable="SGOthersColumn" msprop:Generator_UserColumnName="SGOthers" type="xs:int" />
+              <xs:element name="USOthers" msprop:Generator_ColumnVarNameInTable="columnUSOthers" msprop:Generator_ColumnPropNameInRow="USOthers" msprop:Generator_ColumnPropNameInTable="USOthersColumn" msprop:Generator_UserColumnName="USOthers" type="xs:int" />
+              <xs:element name="MYOthers" msprop:Generator_ColumnVarNameInTable="columnMYOthers" msprop:Generator_ColumnPropNameInRow="MYOthers" msprop:Generator_ColumnPropNameInTable="MYOthersColumn" msprop:Generator_UserColumnName="MYOthers" type="xs:decimal" minOccurs="0" />
+              <xs:element name="DeductionDomitory" msprop:Generator_ColumnVarNameInTable="columnDeductionDomitory" msprop:Generator_ColumnPropNameInRow="DeductionDomitory" msprop:Generator_ColumnPropNameInTable="DeductionDomitoryColumn" msprop:Generator_UserColumnName="DeductionDomitory" type="xs:decimal" minOccurs="0" />
+              <xs:element name="DeductionNPL" msprop:Generator_ColumnVarNameInTable="columnDeductionNPL" msprop:Generator_ColumnPropNameInRow="DeductionNPL" msprop:Generator_ColumnPropNameInTable="DeductionNPLColumn" msprop:Generator_UserColumnName="DeductionNPL" type="xs:decimal" minOccurs="0" />
+              <xs:element name="DeductionSL" msprop:Generator_ColumnVarNameInTable="columnDeductionSL" msprop:Generator_ColumnPropNameInRow="DeductionSL" msprop:Generator_ColumnPropNameInTable="DeductionSLColumn" msprop:Generator_UserColumnName="DeductionSL" type="xs:decimal" minOccurs="0" />
+              <xs:element name="DeductionLate" msprop:Generator_ColumnVarNameInTable="columnDeductionLate" msprop:Generator_ColumnPropNameInRow="DeductionLate" msprop:Generator_ColumnPropNameInTable="DeductionLateColumn" msprop:Generator_UserColumnName="DeductionLate" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Deduction5" msprop:Generator_ColumnVarNameInTable="columnDeduction5" msprop:Generator_ColumnPropNameInRow="Deduction5" msprop:Generator_ColumnPropNameInTable="Deduction5Column" msprop:Generator_UserColumnName="Deduction5" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Deduction6" msprop:Generator_ColumnVarNameInTable="columnDeduction6" msprop:Generator_ColumnPropNameInRow="Deduction6" msprop:Generator_ColumnPropNameInTable="Deduction6Column" msprop:Generator_UserColumnName="Deduction6" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Deduction7" msprop:Generator_ColumnVarNameInTable="columnDeduction7" msprop:Generator_ColumnPropNameInRow="Deduction7" msprop:Generator_ColumnPropNameInTable="Deduction7Column" msprop:Generator_UserColumnName="Deduction7" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Deduction8" msprop:Generator_ColumnVarNameInTable="columnDeduction8" msprop:Generator_ColumnPropNameInRow="Deduction8" msprop:Generator_ColumnPropNameInTable="Deduction8Column" msprop:Generator_UserColumnName="Deduction8" type="xs:decimal" minOccurs="0" />
+              <xs:element name="USDeduction" msprop:Generator_ColumnVarNameInTable="columnUSDeduction" msprop:Generator_ColumnPropNameInRow="USDeduction" msprop:Generator_ColumnPropNameInTable="USDeductionColumn" msprop:Generator_UserColumnName="USDeduction" type="xs:decimal" minOccurs="0" />
+              <xs:element name="USInsurance" msprop:Generator_ColumnVarNameInTable="columnUSInsurance" msprop:Generator_ColumnPropNameInRow="USInsurance" msprop:Generator_ColumnPropNameInTable="USInsuranceColumn" msprop:Generator_UserColumnName="USInsurance" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Gross" msprop:Generator_ColumnVarNameInTable="columnGross" msprop:Generator_ColumnPropNameInRow="Gross" msprop:Generator_ColumnPropNameInTable="GrossColumn" msprop:Generator_UserColumnName="Gross" type="xs:decimal" minOccurs="0" />
+              <xs:element name="SocialSecuritybyEmployer" msprop:Generator_ColumnVarNameInTable="columnSocialSecuritybyEmployer" msprop:Generator_ColumnPropNameInRow="SocialSecuritybyEmployer" msprop:Generator_ColumnPropNameInTable="SocialSecuritybyEmployerColumn" msprop:Generator_UserColumnName="SocialSecuritybyEmployer" type="xs:decimal" minOccurs="0" />
+              <xs:element name="HFbyCompany" msprop:Generator_ColumnVarNameInTable="columnHFbyCompany" msprop:Generator_ColumnPropNameInRow="HFbyCompany" msprop:Generator_ColumnPropNameInTable="HFbyCompanyColumn" msprop:Generator_UserColumnName="HFbyCompany" type="xs:decimal" minOccurs="0" />
+              <xs:element name="SocialSecuritybyEmployee" msprop:Generator_ColumnVarNameInTable="columnSocialSecuritybyEmployee" msprop:Generator_ColumnPropNameInRow="SocialSecuritybyEmployee" msprop:Generator_ColumnPropNameInTable="SocialSecuritybyEmployeeColumn" msprop:Generator_UserColumnName="SocialSecuritybyEmployee" type="xs:decimal" minOccurs="0" />
+              <xs:element name="HFbyEmployee" msprop:Generator_ColumnVarNameInTable="columnHFbyEmployee" msprop:Generator_ColumnPropNameInRow="HFbyEmployee" msprop:Generator_ColumnPropNameInTable="HFbyEmployeeColumn" msprop:Generator_UserColumnName="HFbyEmployee" type="xs:decimal" minOccurs="0" />
+              <xs:element name="ProvidentFundbyEmployee" msprop:Generator_ColumnVarNameInTable="columnProvidentFundbyEmployee" msprop:Generator_ColumnPropNameInRow="ProvidentFundbyEmployee" msprop:Generator_ColumnPropNameInTable="ProvidentFundbyEmployeeColumn" msprop:Generator_UserColumnName="ProvidentFundbyEmployee" type="xs:decimal" minOccurs="0" />
+              <xs:element name="ProvidentFundbyCompany" msprop:Generator_ColumnVarNameInTable="columnProvidentFundbyCompany" msprop:Generator_ColumnPropNameInRow="ProvidentFundbyCompany" msprop:Generator_ColumnPropNameInTable="ProvidentFundbyCompanyColumn" msprop:Generator_UserColumnName="ProvidentFundbyCompany" type="xs:decimal" minOccurs="0" />
+              <xs:element name="MYEISEE" msprop:Generator_ColumnVarNameInTable="columnMYEISEE" msprop:Generator_ColumnPropNameInRow="MYEISEE" msprop:Generator_ColumnPropNameInTable="MYEISEEColumn" msprop:Generator_UserColumnName="MYEISEE" type="xs:decimal" minOccurs="0" />
+              <xs:element name="MYEISER" msprop:Generator_ColumnVarNameInTable="columnMYEISER" msprop:Generator_ColumnPropNameInRow="MYEISER" msprop:Generator_ColumnPropNameInTable="MYEISERColumn" msprop:Generator_UserColumnName="MYEISER" type="xs:decimal" minOccurs="0" />
+              <xs:element name="MYTax" msprop:Generator_ColumnVarNameInTable="columnMYTax" msprop:Generator_ColumnPropNameInRow="MYTax" msprop:Generator_ColumnPropNameInTable="MYTaxColumn" msprop:Generator_UserColumnName="MYTax" type="xs:decimal" minOccurs="0" />
+              <xs:element name="CNTax1" msprop:Generator_ColumnVarNameInTable="columnCNTax1" msprop:Generator_ColumnPropNameInRow="CNTax1" msprop:Generator_ColumnPropNameInTable="CNTax1Column" msprop:Generator_UserColumnName="CNTax1" type="xs:decimal" minOccurs="0" />
+              <xs:element name="CNTax2" msprop:Generator_ColumnVarNameInTable="columnCNTax2" msprop:Generator_ColumnPropNameInRow="CNTax2" msprop:Generator_ColumnPropNameInTable="CNTax2Column" msprop:Generator_UserColumnName="CNTax2" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Severance" msprop:Generator_ColumnVarNameInTable="columnSeverance" msprop:Generator_ColumnPropNameInRow="Severance" msprop:Generator_ColumnPropNameInTable="SeveranceColumn" msprop:Generator_UserColumnName="Severance" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Net" msprop:Generator_ColumnVarNameInTable="columnNet" msprop:Generator_ColumnPropNameInRow="Net" msprop:Generator_ColumnPropNameInTable="NetColumn" msprop:Generator_UserColumnName="Net" type="xs:decimal" minOccurs="0" />
+              <xs:element name="T401kbyCompany" msprop:Generator_ColumnVarNameInTable="columnT401kbyCompany" msprop:Generator_ColumnPropNameInRow="T401kbyCompany" msprop:Generator_ColumnPropNameInTable="T401kbyCompanyColumn" msprop:Generator_UserColumnName="T401kbyCompany" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

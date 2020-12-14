@@ -1,0 +1,122 @@
+﻿* {
+    padding: 0;
+    margin: 0;
+}
+
+#FGLabelBody {
+    width: 820px;
+    height: 780px;
+    border: 1px solid lightgray;
+    background-color: #E3F1FE;
+    font-family:Arial;
+}
+
+em {
+    display: inline-block;
+    font-style: normal;
+    color: black;
+    width: 110px;
+    font-size: 10px;
+    padding: 0 auto;
+}
+
+input, textarea {
+    border: solid 1px lightblue;
+    font-size: 16px;
+}
+
+fieldset {
+    padding: 5px 10px;
+    border: 1px solid lightgray;
+}
+
+    fieldset legend {
+        font-size: 10px;
+    }
+
+textarea {
+    resize: none;
+    overflow-y: scroll;
+    scrollbar-track-color: aquamarine;
+}
+
+#first {
+    border: 1px solid #E3F1FE;
+}
+
+.layui-tab-title {
+    height: 20px;
+}
+
+    .layui-tab-title li {
+        font-size: 10px;
+        line-height: 20px;
+    }
+
+    .layui-tab-title .layui-this:after {
+        height: 20px;
+    }
+
+.layui-tab-content {
+    line-height: 24px;
+}
+
+.rowInfo {
+    padding: 5px 5px;
+}
+
+    .rowInfo .left-field {
+        float: left;
+    }
+
+    .rowInfo .right-field {
+        float: right;
+    }
+
+.longText {
+    width: 380px;
+}
+
+.shortText {
+    width: 130px
+}
+
+input.show {
+    background-color: inherit;
+}
+
+#repackBlock::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+#repackScan {
+    width: 120px;
+}
+
+#repack, #generate, #printcode, #printlabel {
+    float: right;
+    margin: 10px 10px;
+}
+
+#remarkem, #shipem {
+    float: left;
+    padding-right: 4px;
+}
+
+.packdate {
+    position: relative;
+}
+
+.icon-date {
+    position: absolute;
+    left: 230px;    
+    /*background-color: #129688;*/    
+    width: 14px;
+    height: 16px;
+    background-image: url('../img/date-icon.jpg');
+    vertical-align: middle;
+    background-repeat: no-repeat;
+    margin-top: 5px;
+}

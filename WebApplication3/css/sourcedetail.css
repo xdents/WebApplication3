@@ -1,0 +1,64 @@
+﻿.container {
+    /*font-size: 16px;*/
+    width: 1180px;
+    margin: 0 auto;
+    background-color: aliceblue;
+}
+
+    .container .header {
+        width: 100%;
+        padding-top: 10px;
+    }
+
+        .container .header .header-left {
+            width: 700px;
+        }
+
+#TxtGlacc {
+    width: 100%;
+}
+
+.container .header .header-left .dlbox, .container .header .header-left .lblItem {
+    margin-bottom: 15px;
+}
+
+.container .header .header-left .dlbox {
+    width: 260px;
+    box-sizing: border-box;
+}
+
+.container .header .header-left .glacc {
+    width: 600px;
+}
+
+.container .header .lblItem {
+    display: block;
+    width: 70px;
+    margin-left: 5px;
+}
+
+.container .header .header-mid .lblItem {
+    width: 35px;
+}
+
+#TxtStartDate, #TxtEndDate, .container .header .header-left .layui-select, .container .header .header-left .layui-input {
+    height: 28px;
+    line-height: 28px;
+}
+
+.layui-form-select dl {
+    top: 28px;
+}
+
+#TxtStartDate, #TxtEndDate {
+    width: 120px;
+}
+
+#BtnSearch {
+    margin-right: 10px;
+}
+
+.container .report-body {
+    padding: 5px 5px;
+    box-sizing:border-box;
+}

@@ -1,0 +1,176 @@
+﻿* {
+    margin: 0;
+    padding: 0;
+    line-height: 24px;
+    font-family: 'Times New Roman';
+}
+
+@font-face {
+    font-family: 'iconfont';
+    src: url('font/iconfont.eot');
+    src: url('font/iconfont.eot?#iefix') format('embedded-opentype'), url('font/iconfont.woff') format('woff'), url('font/iconfont.ttf') format('truetype'), url('font/iconfont.svg#iconfont') format('svg');
+}
+
+.iconfont {
+    font-family: "iconfont" !important;
+    font-size: 16px;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 0.2px;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+em {
+    font-style: normal;
+    width: 50px;
+}
+
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+.clearfix {
+    clear: both;
+    content: "";
+    display: block;
+}
+
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.ReportBody {
+    position:absolute;
+    width: 80%;
+    min-height: 97%;
+    height: auto;
+    left:10%;
+    padding: 10px 10px 10px 0;
+    margin: 0 auto;
+    background-color: aliceblue;
+    line-height: 24px;
+}
+
+.ReportBody .searchBox {
+    margin: 0 auto;
+    font-size: 14px;
+    width: 100%;
+}
+
+.ReportBody #BtnSearch {
+    width: 110px;
+    border-radius: 4px;
+    outline: none;
+    font-size: 14px;
+    line-height: normal;
+    vertical-align: middle;
+}
+
+    .ReportBody #BtnSearch:hover {
+        background-color: #008c8c;
+    }
+
+.ReportBody button, .ReportBody select, .ReportBody input {
+    line-height: 24px;
+    height: 24px;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 0;
+}
+
+.ReportBody .content {
+    position: absolute;
+    margin: 0 auto;
+    min-height: 93%;
+    height: auto;
+    left: 0px;
+}
+
+.ReportBody .searchBox .condition span {
+    width: 300px;
+    display: inline-block;
+    font-size: 12px;
+    /*text-align: right;*/
+}
+
+.ReportBody .searchBox span {
+    margin-right: 10px;
+}
+
+.ReportBody .searchBox .condition div {
+    height: 24px;
+}
+
+.ReportBody .searchBox .condition ::after {
+    clear: both;
+    content: '';
+    display: block;
+}
+
+.ReportBody .searchBox .condition {
+    width: 400px;
+}
+
+.ReportBody .searchBox .condition #dlMaterialName, .ReportBody .searchBox .condition #dlSupplier, .ReportBody .searchBox .condition #TxtPlanner {
+    width: 220px
+}
+
+.ReportBody .searchBox .searchPeriod {
+    font-size: 12px;
+    height: 24px;
+    line-height: 24px;
+    padding: 0 auto;
+}
+
+.ReportBody .searchBox .searchPeriod #dlPeriod {
+    width: 65px;
+}
+
+.ReportBody #ReportViewer1 {
+    padding: 0 10px;
+}
+
+.DropDownClass {
+    width: 300px;
+    border-radius: 4px;
+    font-size: 14px;
+    line-height: normal;
+    vertical-align: middle;
+    /*border-color: #008c8c;*/
+}
+.FixDiv {
+    margin: 5px auto;
+    display: inline-block;
+}
+
+.ButtonClass {
+    height: 29px;
+    position: relative;
+    border: 1px solid RGB(128,128,128);
+    border-radius: 4px;
+    background-color: white;
+    font-family: "iconfont" !important;
+    font-size: 16px;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all .5s;
+}
+.ButtonClass:hover {
+    border-color: #008c8c;
+    background-color: #CCE8CF;
+}
+.ButtonClass#BtnSearch2{
+    top:2px;
+}
+
+.TableClass {
+    border-collapse: separate;
+    border-spacing: 5px 5px;
+}
